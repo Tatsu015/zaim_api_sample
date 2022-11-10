@@ -35,3 +35,14 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxx is verifier.
 in python execute terminal, input xxxxxxxxxxxxxxxxxxxxxxxxxxx.
 
 after that, display `access token` and `acces token secret`.
+
+### set environment variables
+```bash
+cp .env.org .env
+```
+and fill datas in .env file
+
+### start application
+```bash
+python main.py
+```
