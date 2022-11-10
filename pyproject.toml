@@ -9,6 +9,7 @@ packages = [{include = "zaim_api_sample"}]
 [tool.poetry.dependencies]
 python = "^3.10"
 pyzaim = "^1.0.11"
+python-dotenv = "^0.21.0"
 
 
 [build-system]

@@ -47,6 +47,17 @@ signals = ["blinker (>=1.4.0)"]
 signedtoken = ["cryptography (>=3.0.0)", "pyjwt (>=2.0.0,<3)"]
 
 [[package]]
+name = "python-dotenv"
+version = "0.21.0"
+description = "Read key-value pairs from a .env file and set them as environment variables"
+category = "main"
+optional = false
+python-versions = ">=3.7"
+
+[package.extras]
+cli = ["click (>=5.0)"]
+
+[[package]]
 name = "pyzaim"
 version = "1.0.11"
 description = "Zaimのデータを取得・操作するPythonパッケージ"
@@ -136,7 +147,7 @@ socks = ["PySocks (>=1.5.6,!=1.5.7,<2.0)"]
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10"
-content-hash = "61996c423f98cc066e0fd683a5f2262784e176e6d8d9a3e9f148b2a3581af286"
+content-hash = "71b3a5fc44e728219e96de68d4d1e5ec41f2f08e4c986f42bf3c7369546f8cf0"
 
 [metadata.files]
 certifi = [
@@ -158,6 +169,10 @@ idna = [
 oauthlib = [
     {file = "oauthlib-3.2.2-py3-none-any.whl", hash = "sha256:8139f29aac13e25d502680e9e19963e83f16838d48a0d71c287fe40e7067fbca"},
     {file = "oauthlib-3.2.2.tar.gz", hash = "sha256:9859c40929662bec5d64f34d01c99e093149682a3f38915dc0655d5a633dd918"},
+]
+python-dotenv = [
+    {file = "python-dotenv-0.21.0.tar.gz", hash = "sha256:b77d08274639e3d34145dfa6c7008e66df0f04b7be7a75fd0d5292c191d79045"},
+    {file = "python_dotenv-0.21.0-py3-none-any.whl", hash = "sha256:1684eb44636dd462b66c3ee016599815514527ad99965de77f43e0944634a7e5"},
 ]
 pyzaim = [
     {file = "pyzaim-1.0.11-py3-none-any.whl", hash = "sha256:d86195171da952a8985248bbbf21bf65cb24a10b5f49955feab23877e2c38805"},
