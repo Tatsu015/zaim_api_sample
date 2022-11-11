@@ -1,6 +1,7 @@
 from dotenv import load_dotenv
 from requests_oauthlib import OAuth1Session
-import os
+import os, sys
+import json
 
 load_dotenv()
 
@@ -17,5 +18,13 @@ auth = OAuth1Session(
             callback_uri="https://www.zaim.net/",
             verifier='verifier',
         )
-
-print(auth.get("https://api.zaim.net/v2/home/user/verify").json())
+url = 'https://api.zaim.net/v2/home/money/payment'
+params = {
+    'mapping': 1,
+    'category_id': '1',
+    'genre_id': '1',
+    'amount': '100',
+    'date': '2022-11-11',
+}
+data = auth.post(url, params)
+print(json.dumps(data.json()))
